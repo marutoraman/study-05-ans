@@ -13,11 +13,10 @@ UIとPython側を連動させて、POSシステムのデスクトップアプリ
 '''
 import pandas as pd
 import datetime
-
+import os
 
 RECEIPT_FOLDER="./receipt"
-CURRENT_ORDER_DATA="./current_order/data.txt"
-
+os.makedirs(RECEIPT_FOLDER, exist_ok=True)
 
 class Item:
     '''
